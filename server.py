@@ -30,12 +30,13 @@ def handle_client(conn, addr):
 def start():
     server.listen()
     print(f"[LISTENING] server is listening on {server}:{PORT}")
-    
+    print("Use this IP and PORT in your client.py to connect safely.\n")
+
     while True:
         conn, addr =server.accept()
         thread = threading.Thread(target=handle_client, args=(conn, addr))
         thread.start()
         print(f"[ACTIVE CONNECTION] {threading.activeCount() - 1}")
-       
+
 print("[STARTING] server is starting...")
 start()
