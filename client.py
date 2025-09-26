@@ -2,7 +2,7 @@ import socket
 
 
 HEADER = 64
-PORT = 5050
+PORT = "[SERVER PORT]"
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
 SERVER = "[SERVER IP]"
@@ -30,4 +30,5 @@ if __name__ == "__main__":
         if msg == DISCONNECT_MESSAGE:
             break
         
+
 
