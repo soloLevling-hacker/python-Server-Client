@@ -5,7 +5,7 @@ HEADER = 64
 PORT = 5050
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
-SERVER = "192.168.1.36"
+SERVER = "[SERVER IP]"
 ADDR = (SERVER, PORT)
 
 client =socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -30,3 +30,4 @@ if __name__ == "__main__":
         if msg == DISCONNECT_MESSAGE:
             break
         
+
